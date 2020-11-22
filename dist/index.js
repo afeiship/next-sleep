@@ -3,7 +3,7 @@
  * description: Sleep for next.
  * homepage: https://github.com/afeiship/next-sleep
  * version: 1.0.0
- * date: 2020-11-22 16:19:45
+ * date: 2020-11-22 16:27:14
  * license: MIT
  */
 
