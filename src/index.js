@@ -1,16 +1,14 @@
-(function () {
-  var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@jswork/next');
-  var DEFAULT_OPTIONS = { context: global };
+import nx from '@jswork/next';
 
-  // https://www.lfhacks.com/tech/puppeteer-sleep
-  nx.sleep = function (inMs) {
-    return new Promise(function (resolve) {
-      setTimeout(resolve, inMs);
-    });
-  };
+// https://www.lfhacks.com/tech/puppeteer-sleep
+nx.sleep = function (inMs) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, inMs);
+  });
+};
 
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.sleep;
-  }
-})();
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+  module.exports = nx.sleep;
+}
+
+export default nx.sleep;

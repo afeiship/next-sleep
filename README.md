@@ -15,7 +15,7 @@ npm install -S @jswork/next-sleep
 ```js
 import '@jswork/next-sleep';
 
-await sleep(100);   // wait 100ms;
+await nx.sleep(100);   // wait 100ms;
 ```
 
 ## license
